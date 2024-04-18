@@ -1,5 +1,5 @@
 # mysql-entity-data-base
-用于orm映射到MySQL数据库的小项目，各方面有待提升
+用于orm映射到MySQL数据库的小项目，初步开发，各方面有待提升。
 # 使用说明
 
 ------
