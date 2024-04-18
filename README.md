@@ -84,23 +84,23 @@ entityStore.getEntityMap(Animal.class);
 	public abstract Entity<E> add(Collection<E> es);
 	
 	public abstract Entity<E> delete();
-    public abstract Entity<E> delete(E e);
-    public abstract Entity<E> delete(Collection<E> es);
+    	public abstract Entity<E> delete(E e);
+    	public abstract Entity<E> delete(Collection<E> es);
 
-    public abstract Entity<E> update(E e);
-    public abstract Entity<E> update(Collection<E> es);
-    public abstract Entity<E> update(Consumer<E> consumer);
+    	public abstract Entity<E> update(E e);
+    	public abstract Entity<E> update(Collection<E> es);
+    	public abstract Entity<E> update(Consumer<E> consumer);
 
-    public abstract Entity<E> select();
-    public abstract Entity<E> select(Class<?> clazz);
-    public abstract Entity<E> select(E e);
-    public abstract Entity<E> select(Predicate<E> predicate);
+    	public abstract Entity<E> select();
+    	public abstract Entity<E> select(Class<?> clazz);
+    	public abstract Entity<E> select(E e);
+    	public abstract Entity<E> select(Predicate<E> predicate);
 
-    public abstract Entity<E> foreachDo(EntityForeachDo<E> entityForeachDo);
+    	public abstract Entity<E> foreachDo(EntityForeachDo<E> entityForeachDo);
 	//void (entity, object)->{entity.delete(object)}
 
-    public abstract Collection<E> toCollection();
-    public abstract Entity<E> save();
+    	public abstract Collection<E> toCollection();
+    	public abstract Entity<E> save();
 ```
 
 在修改后，使用save(	)方法才会写入数据库。
